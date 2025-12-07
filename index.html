@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Little Universe</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
     </head>
-
     <body>
-        <ul class="circle1">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div id="app">
+            <canvas id="c"></canvas>
+            <!-- UI Menu (hidden until planet click) -->
+            <div id="menu" class="menu hidden">
+                <button id="menu-close" class="menu-close">✕</button>
+                <h2>Planet Menu</h2>
+                <ul>
+                    <li><button class="menu-item">About</button></li>
+                    <li><button class="menu-item">Gallery</button></li>
+                    <li><button class="menu-item">Teleport</button></li>
+                    <li><button class="menu-item">Settings</button></li>
+                </ul>
+            </div>
+            <div id="hud" class="hud">Hover / Click</div>
+        </div>
 
-        <ul class="circle2">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 
-        <script src="./assets/js/main.js"></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+                }
+            }
+        </script>
+
+        <script type="module" src="./assets/js/main.js"></script>
     </body>
 </html>

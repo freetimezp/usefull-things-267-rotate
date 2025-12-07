@@ -1,0 +1,14 @@
+{
+                "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+                }
+            }
+
+
+            import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { FontLoader } from "three/addons/loaders/FontLoader.js";
+import { TextGeometry } from "three/addons/geometries/TextGeometry.js";
+
+
+https://threejs.org/examples/fonts/helvetiker_regular.typeface.json
